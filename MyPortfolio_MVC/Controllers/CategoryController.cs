@@ -25,11 +25,13 @@ namespace MyPortfolio_MVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateCategory(TblCategory category)
+        public ActionResult CreateCategory(TblCategory model)
         {
-            db.TblCategories.Add(category);
+            db.TblCategories.Add(model);
             db.SaveChanges();
             return RedirectToAction("Index");
+
+
         }
 
     }
