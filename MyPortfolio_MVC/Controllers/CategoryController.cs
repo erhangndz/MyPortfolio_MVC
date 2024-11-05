@@ -37,6 +37,14 @@ namespace MyPortfolio_MVC.Controllers
         public ActionResult DeleteCategory(int id)
         {
             var value = db.TblCategories.Find(id);
+
+          var projectExist = db.TblProjects.Where(x=>x.CategoryId==value.CategoryId).Any();
+            if (projectExist)
+            {
+                TempData["categoryDeleteError"] = "Bu Kategoriye Ait Proje Bulunmaktadır. Bu Kategoriyi Silemezsiniz";
+                return RedirectToAction("Index"); 
+            }
+
             db.TblCategories.Remove(value);
             db.SaveChanges();
             return RedirectToAction("Index");
