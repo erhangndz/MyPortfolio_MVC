@@ -51,11 +51,11 @@ namespace MyPortfolio_MVC.Controllers
         {
             var value = db.TblEducations.Find(model.EducationId);
             value.SchoolName = model.SchoolName;
-            value.Description=model.Description;
-            value.StartDate=model.StartDate;
+            value.Description = model.Description;
+            value.StartDate = model.StartDate;
             value.EndDate = model.EndDate;
-            value.Degree=model.Degree;
-            value.Department=model.Department;
+            value.Degree = model.Degree;
+            value.Department = model.Department;
             db.SaveChanges();
             return RedirectToAction("Index");
         }
