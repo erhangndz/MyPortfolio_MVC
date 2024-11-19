@@ -19,7 +19,7 @@ namespace MyPortfolio_MVC.Models
         {
             this.TblProjects = new HashSet<TblProject>();
         }
-    
+        
         public int CategoryId { get; set; }
         public string Name { get; set; }
     

@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MyPortfolio_MVC.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         MyPortfolioDb6Entities db = new MyPortfolioDb6Entities();
@@ -35,6 +36,6 @@ namespace MyPortfolio_MVC.Controllers
             return PartialView(values);
         }
 
-        //
+        //Mesaj Gönderme İşlemleri yapılacak.
     }
 }

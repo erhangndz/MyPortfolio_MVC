@@ -1,0 +1,7 @@
+﻿
+
+
+Sesssion değeri gelmezse login/Indexe atsın ..
+Mesaj Gönderme İşlemleri
+Ana sayfada Projelerim kısmı 
+Profile/Index içinde şifre güncelleme kısmı eklenecek
