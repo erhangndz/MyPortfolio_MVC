@@ -32,8 +32,10 @@ namespace MyPortfolio_MVC.Controllers
 
             Session["email"] = value.Email;
             return RedirectToAction("Index", "Category");
-
+            
            
         }
+
+        
     }
 }

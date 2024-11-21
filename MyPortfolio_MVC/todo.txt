@@ -1,7 +1,35 @@
 ﻿
 
 
-Sesssion değeri gelmezse login/Indexe atsın ..
+
 Mesaj Gönderme İşlemleri
-Ana sayfada Projelerim kısmı 
 Profile/Index içinde şifre güncelleme kısmı eklenecek
+
+
+
+
+
+1- Uygulama geliştirerek c#
+2- Sorgularla adım adım sql
+3- 25 derste 25 proje
+4- 50 derste mvc (youtube)
+5- 50 derste tatil seyahat sitesi (youtube)
+6- udemy admin panelli cv sitesi --- eğitim 1. proje  
+7- .net core ile portfolio part 1 part2 
+8- Adım adım .net core 5 ile web geliştirme
+9- Traversal 
+
+
+
+1 mvc ef dbfirst 
+2 mvc ef code-first (migration)
+3. .net core n-tier architecture / repository design pattern DI (Ioc) Interface inheritance 
+Identity (authorization authentication) 
+4. Web API Api Consume 
+5. Rapid Api Consume 
+6. Design Pattern 
+7. MongoDb 
+8. AJax Jquery cRUd
+DApper Orm 
+Onion Arc 
+
