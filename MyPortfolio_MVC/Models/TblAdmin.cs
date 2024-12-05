@@ -23,6 +23,12 @@ namespace MyPortfolio_MVC.Models
         public string Surname { get; set; }
         public string ImageUrl { get; set; }
 
+       
+    }
+
+
+    public partial class TblAdmin
+    {
         [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
     }
