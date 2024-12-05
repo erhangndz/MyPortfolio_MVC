@@ -51,9 +51,24 @@ namespace MyPortfolio_MVC.Controllers
         [HttpPost]
         public ActionResult SendMessage(TblMessage model)
         {
+            model.IsRead = false;
+            db.TblMessages.Add(model);
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        //Mesaj Gönderme İşlemleri yapılacak.
+        public PartialViewResult DefaultAbout()
+        {
+            var values = db.TblAbouts.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultEducation()
+        {
+            var values = db.TblEducations.ToList();
+            return PartialView(values);
+        }
+
+        
     }
 }

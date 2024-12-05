@@ -27,21 +27,21 @@ namespace MyPortfolio_MVC.Controllers
 
         public PartialViewResult AdminLayoutSidebar()
         {
-            var email = Session["email"].ToString();
-            var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
+            //var email = Session["email"].ToString();
+            //var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
 
-            ViewBag.nameSurname = admin.Name + " " + admin.Surname;
-            ViewBag.image = admin.ImageUrl;
+            //ViewBag.nameSurname = admin.Name + " " + admin.Surname;
+            //ViewBag.image = admin.ImageUrl;
             return PartialView();
         }
 
         public PartialViewResult AdminLayoutNavbar()
         {
-            var email = Session["email"].ToString();
-            var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
+            //var email = Session["email"].ToString();
+            //var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
 
-            ViewBag.nameSurname = admin.Name + " " + admin.Surname;
-            ViewBag.image = admin.ImageUrl;
+            //ViewBag.nameSurname = admin.Name + " " + admin.Surname;
+            //ViewBag.image = admin.ImageUrl;
             return PartialView();
         }
 
